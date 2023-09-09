@@ -1,5 +1,7 @@
 import { useState } from "react";
 import Button from "../Button/Button";
+import "./Card.css"; 
+
 
 const Card = ({  question, correctAnswerMarkUpdate, attempt, options, answer ,setQsns,qsn ,setCard,qsnAttempt}) => {
     // Creating an array of options
@@ -22,20 +24,25 @@ const Card = ({  question, correctAnswerMarkUpdate, attempt, options, answer ,se
             correctAnswerMarkUpdate(attempt + 1)
     }
 
-    // Styles for the button
-    const norm = "bg-red-300 px-2 py-1 rounded hover:bg-orange-400"
-    const disable = "bg-orange-300 px-2 py-1 rounded  disabled:opacity-50"
 
     return (
-        <div>
-            <h4 className="pt-3 pb-1">{question}</h4>
-            <div className="flex space-x-2">
-                {optionsArray.map((option, index) =>
-                <Button key={index} marked={marked} onClick={() => click(option)} style={!marked ? norm : disable} >{ option }</Button>
-                )}
-            </div>
+        <div className="card-container">
+          <h4 className="question">{question}</h4>
+          <div className="options-container">
+            {optionsArray.map((option, index) => (
+              <Button
+                key={index}
+                marked={marked}
+                onClick={() => click(option)}
+                className={!marked ? "option-button" : "disabled-option-button"}
+              >
+                {option}
+              </Button>
+            ))}
+          </div>
         </div>
-    )
+      );
+      
 }
 
 export default Card;

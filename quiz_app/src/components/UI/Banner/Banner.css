@@ -1,0 +1,17 @@
+/* Banner.css */
+
+/* Style for the banner container */
+.banner-container {
+    background-color: #4caf50; 
+    color: #fff; 
+    padding: 1rem;
+    text-align: center;
+    border-radius: 5px;
+    margin-bottom: 1rem;
+  }
+  
+  /* Style for the banner text */
+  .banner-text {
+    font-size: 1.2rem;
+  }
+  

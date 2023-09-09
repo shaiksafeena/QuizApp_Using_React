@@ -1,0 +1,24 @@
+/* Button.css */
+
+/* Style for the button */
+.custom-button {
+    padding: 0.5rem 1rem;
+    background-color: #007bff;
+    color: #fff; 
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .custom-button:hover {
+    background-color: #0056b3; 
+  }
+  
+  /* Style for the disabled button */
+  .disabled-button {
+    background-color: #ccc; 
+    color: #666; 
+    cursor: not-allowed;
+  }
+  

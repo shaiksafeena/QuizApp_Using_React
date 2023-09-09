@@ -1,0 +1,43 @@
+/* Card.css */
+
+/* Style for the card container */
+.card-container {
+    border: 1px solid #ccc;
+    padding: 1rem;
+    margin: 1rem;
+    border-radius: 5px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  /* Style for the question */
+  .question {
+    font-weight: bold;
+  }
+  
+  /* Style for the options container */
+  .options-container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+  
+  /* Style for the option button */
+  .option-button {
+    padding: 0.5rem 1rem;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .option-button:hover {
+    background-color: #ff9900;
+  }
+  
+  /* Style for the disabled option button */
+  .disabled-option-button {
+    background-color: #ffa07a;
+    cursor: not-allowed;
+    opacity: 0.5;
+  }
+  
